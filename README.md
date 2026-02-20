@@ -21,12 +21,11 @@
 
 ---
 
-## 📋 Table of Contents
+##Table of Contents
 
 - [About The Project](#about-the-project)
 - [Pages Overview](#pages-overview)
 - [Third-Party Components](#third-party-components)
-- [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
 - [Responsive Design](#responsive-design)
 - [Naming Conventions](#naming-conventions)
@@ -79,55 +78,6 @@ Full-screen hero section with the company vision, a three-pillar philosophy grid
 | **RotatingText** | Animated word cycling in the hero headline | Custom component using [Framer Motion](https://www.framer.com/motion/) |
 | **Carousel / SpotlightCard** | Interactive spotlight-effect card carousel | [ui.aceternity.com](https://ui.aceternity.com) |
 
----
-
-##Project Structure
-
-```
-COALESCENCE/
-└── src/
-    ├── assets/
-    │   ├── fonts/
-    │   │   ├── Coolvetica Rg.otf
-    │   │   └── Induction.otf
-    │   └── images/
-    ├── components/
-    │   ├── footer/
-    │   │   ├── Footer.jsx
-    │   │   └── Footer.css
-    │   ├── header/
-    │   │   ├── Header.jsx
-    │   │   └── Header.css
-    │   └── ui/
-    │       ├── background-beams/
-    │       ├── carousel/
-    │       ├── rotating-text/
-    │       └── scroll-velocity/
-    ├── lib/
-    │   └── utils.js
-    ├── pages/
-    │   ├── home/
-    │   │   ├── Home.jsx
-    │   │   └── Home.css
-    │   ├── ai/
-    │   │   ├── Ai.jsx
-    │   │   └── Ai.css
-    │   ├── research/
-    │   │   ├── Research.jsx
-    │   │   └── Research.css
-    │   ├── history/
-    │   │   ├── History.jsx
-    │   │   └── History.css
-    │   └── tomorrow/
-    │       ├── Tomorrow.jsx
-    │       └── Tomorrow.css
-    ├── App.jsx
-    ├── App.css
-    ├── main.jsx
-    └── index.css
-```
-
----
 
 ##Getting Started
 
