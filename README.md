@@ -36,7 +36,7 @@
 
 ---
 
-## 🧠 About The Project
+##About The Project
 
 **COALESCENCE** is a futuristic AI platform landing page built with **React + Vite**. The project showcases a complete multi-page web application with a dark, high-contrast aesthetic — black backgrounds, orange (`#ed6a2d`) accents, and custom typography (`Coolvetica` + `Induction`).
 
@@ -50,7 +50,7 @@ The site presents a fictional next-generation intelligence company with sections
 
 ---
 
-## 📄 Pages Overview
+##Pages Overview
 
 ### `/` and `/home` — Home
 The main landing page. Features a full-screen hero with a tablet mockup and parallax effect, an animated rotating text headline, a spotlight card carousel, a scroll-velocity text strip, a stats section (array of JSON objects rendered dynamically), and an "About" section with company description and navigation CTAs.
@@ -69,7 +69,7 @@ Full-screen hero section with the company vision, a three-pillar philosophy grid
 
 ---
 
-## 📦 Third-Party Components
+##Third-Party Components
 
 | Component | Description | Link |
 |-----------|-------------|------|
@@ -81,7 +81,7 @@ Full-screen hero section with the company vision, a three-pillar philosophy grid
 
 ---
 
-## 🗂 Project Structure
+##Project Structure
 
 ```
 COALESCENCE/
@@ -129,7 +129,7 @@ COALESCENCE/
 
 ---
 
-## 🚀 Getting Started
+##Getting Started
 
 ### Prerequisites
 
@@ -162,7 +162,7 @@ The app will be available at:
 
 ---
 
-## 📱 Responsive Design
+##Responsive Design
 
 The layout is fully responsive using **CSS Flexbox**, **CSS Grid**, and **Media Queries**. Breakpoints used:
 
@@ -177,7 +177,7 @@ On mobile, multi-column grids collapse to single columns, the visual orb in the 
 
 ---
 
-## 🏷 Naming Conventions
+##Naming Conventions
 
 This project follows a strict set of naming conventions for consistency:
 
@@ -194,7 +194,7 @@ This project follows a strict set of naming conventions for consistency:
 
 ---
 
-## 🎨 Design Inspiration
+##Design Inspiration
 
 The visual design was inspired by futuristic UI/UX concepts for AI and tech platforms.
 
@@ -204,7 +204,7 @@ The visual design was inspired by futuristic UI/UX concepts for AI and tech plat
 
 ---
 
-## 📚 Tutorials & References
+##Tutorials & References
 
 - [React Router DOM — Official Docs](https://reactrouter.com/en/main)
 - [Framer Motion — Animation Library](https://www.framer.com/motion/)
@@ -213,10 +213,12 @@ The visual design was inspired by futuristic UI/UX concepts for AI and tech plat
 - [Shopify — Web Image Optimization Guide](https://www.shopify.com/es/blog/imagenes-para-web-tamano)
 - [CSS Flexbox Guide — CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Clean Code Principles](https://www.hostgator.mx/blog/clean-code-codigo-limpio/)
+- [Web design ref ](https://walbi.com/)
+- [Home bg ref](https://www.reactbits.dev/get-started/index)
 
 ---
 
-## 📜 License
+##License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
