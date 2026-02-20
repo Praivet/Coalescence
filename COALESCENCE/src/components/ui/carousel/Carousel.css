@@ -1,0 +1,133 @@
+/* Container del carousel */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+/* Wrapper de la card */
+.carousel-card-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-card {
+    background: linear-gradient(135deg, rgba(26, 31, 36, 0.8), rgba(17, 17, 17, 0.9));
+    border: 1px solid rgba(196, 106, 45, 0.3);
+}
+
+/* Botones de navegación */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(196, 106, 45, 0.5);
+    color: #ed6a2d;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+}
+
+.carousel-button:hover {
+    background: rgba(237, 106, 45, 0.2);
+    border-color: #ed6a2d;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-button-prev {
+    left: -1rem;
+}
+
+.carousel-button-next {
+    right: -1rem;
+}
+
+/* Indicadores (dots) */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 2rem;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.carousel-dot:hover {
+    background: rgba(237, 106, 45, 0.5);
+    transform: scale(1.2);
+}
+
+.carousel-dot.active {
+    background: #ed6a2d;
+    width: 24px;
+    border-radius: 5px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 1024px) {
+    .carousel-container {
+        padding: 0 2rem;
+    }
+
+    .carousel-button-prev {
+        left: -0.5rem;
+    }
+
+    .carousel-button-next {
+        right: -0.5rem;
+    }
+
+    .carousel-button {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-container {
+        padding: 0 1.5rem;
+    }
+
+    .carousel-button {
+        width: 36px;
+        height: 36px;
+    }
+
+    .carousel-button-prev {
+        left: 0;
+    }
+
+    .carousel-button-next {
+        right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-button {
+        display: none;
+    }
+
+    .carousel-indicators {
+        margin-top: 1.5rem;
+    }
+}

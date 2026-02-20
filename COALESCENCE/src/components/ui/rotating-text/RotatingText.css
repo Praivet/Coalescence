@@ -1,0 +1,9 @@
+.rotating-text-container {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.rotating-text-item {
+    display: inline-block;
+}

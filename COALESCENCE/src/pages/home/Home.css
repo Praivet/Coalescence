@@ -1,0 +1,490 @@
+/* ================================================================
+   HOME.CSS — COALESCENCE
+   ================================================================ */
+
+.home-container {
+    width: 100%;
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+/* === HERO === */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.tablet-container {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    transition: transform 0.1s linear;
+    will-change: transform;
+}
+
+.tablet-mockup {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.tablet-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* === PARALLAX OVERLAY === */
+.parallax-overlay-section {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    z-index: 50;
+    margin-top: -10vh;
+}
+
+.parallax-rectangle {
+    width: 100%;
+    background-color: #000000;
+    box-shadow: 0 -100px 100px rgba(0, 0, 0, 1);
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6rem;
+    padding-bottom: 0;
+}
+
+/* Texto "Enhance the FUTURE" */
+.enhance-title-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+.enhance-title {
+    font-family: 'Coolvetica', sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #ffffff;
+    margin: 0;
+}
+
+.enhance-future {
+    color: #ed6a2d;
+    font-family: 'Induction', sans-serif;
+    display: inline;
+}
+
+/* === SPOTLIGHT === */
+.spotlight-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    padding: 0 4rem;
+}
+
+/* === SCROLL VELOCITY === */
+.scroll-velocity-section {
+    width: 10vw;
+    position: relative;
+    left: -50%;
+    right: -50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 4rem;
+    overflow: visible;
+}
+
+.custom-scroll-text {
+    color: #ed6a2d;
+}
+
+/* existing card styles */
+.weapons-card {
+    background: linear-gradient(135deg, rgba(26, 31, 36, 0.8), rgba(17, 17, 17, 0.9));
+    border: 1px solid rgba(196, 106, 45, 0.3);
+}
+
+.card-title {
+    font-family: 'Induction', sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+
+.card-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #cccccc;
+    margin-bottom: 2rem;
+}
+
+.card-specs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.spec-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.spec-label {
+    font-size: 0.85rem;
+    color: #808080;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.spec-value {
+    font-family: 'Induction', sans-serif;
+    font-size: 1rem;
+    color: #ed6a2d;
+    font-weight: 600;
+}
+
+/* ================================================================
+   STATS
+   ================================================================ */
+.home-stats-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 6rem auto 0;
+    padding: 0 4rem;
+}
+
+.home-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: rgba(237, 106, 45, 0.12);
+    border: 1px solid rgba(237, 106, 45, 0.12);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.home-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    background: #000000;
+    gap: 0.6rem;
+    transition: background 0.3s ease;
+}
+
+.home-stat-item:hover {
+    background: rgba(237, 106, 45, 0.04);
+}
+
+.home-stat-value {
+    font-family: 'Induction', sans-serif;
+    font-size: 2.8rem;
+    color: #ed6a2d;
+    line-height: 1;
+}
+
+.home-stat-label {
+    font-size: 0.78rem;
+    color: #555555;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+/* ================================================================
+   ABOUT
+   ================================================================ */
+.home-about-section {
+    width: 100%;
+    margin-top: 8rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    padding: 6rem 0;
+}
+
+.home-about-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.home-eyebrow {
+    font-family: 'Induction', sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #ed6a2d;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.home-eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 2rem;
+    height: 1px;
+    background: #ed6a2d;
+    flex-shrink: 0;
+}
+
+.home-about-title {
+    font-family: 'Coolvetica', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #ffffff;
+    margin: 0 0 1.5rem;
+}
+
+.home-about-title span {
+    font-family: 'Induction', sans-serif;
+    color: #ed6a2d;
+}
+
+.home-about-body {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: 'Coolvetica', sans-serif;
+    color: #ffffff;
+    margin-bottom: 1.2rem;
+}
+
+.home-about-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home-about-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.8rem 1.8rem;
+    background: linear-gradient(135deg, rgba(237, 106, 45, 0.15), rgba(196, 106, 45, 0.1));
+    border: 1px solid rgba(237, 106, 45, 0.4);
+    border-radius: 6px;
+    color: #ffffff;
+    font-family: 'Induction', sans-serif;
+    font-size: 0.58rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.home-about-cta:hover {
+    background: linear-gradient(135deg, rgba(237, 106, 45, 0.3), rgba(196, 106, 45, 0.2));
+    border-color: #ed6a2d;
+    transform: translateY(-2px);
+}
+
+.home-about-cta-ghost {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 1.8rem;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    color: #888888;
+    font-family: 'Induction', sans-serif;
+    font-size: 0.58rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.home-about-cta-ghost:hover {
+    border-color: rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+}
+
+/* ================================================================
+   RESPONSIVE
+   ================================================================ */
+@media (max-width: 1400px) {
+    .tablet-container {
+        max-width: 1000px;
+    }
+
+    .enhance-title {
+        font-size: 4rem;
+    }
+
+    .spotlight-section {
+        padding: 0 3rem;
+    }
+
+    .home-stats-section {
+        padding: 0 3rem;
+    }
+
+    .home-about-inner {
+        padding: 0 3rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .tablet-container {
+        max-width: 800px;
+    }
+
+    .parallax-overlay-section {
+        margin-top: -20vh;
+    }
+
+    .enhance-title-container {
+        padding: 0 2rem;
+    }
+
+    .enhance-title {
+        font-size: 4rem;
+    }
+
+    .spotlight-section {
+        padding: 0 2rem;
+        margin-top: 3rem;
+    }
+
+    .card-specs {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .home-stats-section {
+        padding: 0 2rem;
+    }
+
+    .home-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-about-inner {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 0 2rem;
+    }
+
+    .home-about-title {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 1rem;
+    }
+
+    .tablet-container {
+        max-width: 100%;
+        margin-top: 10rem;
+    }
+
+    .parallax-overlay-section {
+        margin-top: -15vh;
+    }
+
+    .parallax-rectangle {
+        padding-top: 4rem;
+    }
+
+    .enhance-title-container {
+        padding: 0 1.5rem;
+    }
+
+    .enhance-title {
+        font-size: 3.5rem;
+    }
+
+    .spotlight-section {
+        padding: 0 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .card-description {
+        font-size: 1rem;
+    }
+
+    .home-stats-section {
+        padding: 0 1.5rem;
+    }
+
+    .home-about-section {
+        padding: 4rem 0;
+    }
+
+    .home-about-inner {
+        padding: 0 1.5rem;
+    }
+
+    .home-about-visual {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .tablet-container {
+        margin-top: 8rem;
+    }
+
+    .parallax-overlay-section {
+        margin-top: -10vh;
+    }
+
+    .enhance-title {
+        font-size: 2.5rem;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .home-stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .home-about-title {
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,215 @@
+.history-page {
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+/* === HERO === */
+.history-hero {
+    position: relative;
+    min-height: 55vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 10rem 4rem 5rem;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.history-hero-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-90deg, rgba(237, 106, 45, 0.05), rgba(0, 0, 0, 0));
+}
+
+.history-hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.history-hero-title {
+    font-family: 'Coolvetica', sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 0.95;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.history-hero-title span {
+    font-family: 'Induction', sans-serif;
+    color: #ed6a2d;
+}
+
+/* === TIMELINE === */
+.history-timeline-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8rem 4rem;
+    position: relative;
+}
+
+.history-timeline {
+    position: relative;
+    padding-left: 3rem;
+}
+
+/* Vertical line */
+.history-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(180deg, #ed6a2d 0%, rgba(237, 106, 45, 0.2) 80%, transparent 100%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Dot on the line */
+.timeline-dot {
+    position: absolute;
+    left: -3.4rem;
+    top: 0.3rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ed6a2d;
+    border: 2px solid #000000;
+    box-shadow: 0 0 0 4px rgba(237, 106, 45, 0.15);
+    flex-shrink: 0;
+}
+
+.timeline-year {
+    font-family: 'Induction', sans-serif;
+    font-size: 1.4rem;
+    color: #ed6a2d;
+    line-height: 1;
+    padding-top: 0.1rem;
+}
+
+.timeline-content-title {
+    font-family: 'Induction', sans-serif;
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.04em;
+}
+
+.timeline-content-desc {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #888888;
+    margin-bottom: 1.2rem;
+}
+
+.timeline-content-tag {
+    display: inline-block;
+    padding: 0.25rem 0.8rem;
+    background: rgba(237, 106, 45, 0.07);
+    border: 1px solid rgba(237, 106, 45, 0.2);
+    border-radius: 4px;
+    font-family: 'Induction', sans-serif;
+    font-size: 0.52rem;
+    letter-spacing: 0.1em;
+    color: #ed6a2d;
+}
+
+/* === FOUNDING SECTION === */
+.history-founding-section {
+    background: linear-gradient(135deg, rgba(237, 106, 45, 0.05), rgba(0, 0, 0, 0));
+    border-top: 1px solid rgba(237, 106, 45, 0.1);
+    border-bottom: 1px solid rgba(237, 106, 45, 0.1);
+    padding: 6rem 4rem;
+}
+
+.history-founding-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+}
+
+.founding-quote {
+    font-family: 'Coolvetica', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.founding-quote span {
+    color: #ed6a2d;
+    font-family: 'Induction', sans-serif;
+}
+
+.founding-quote-author {
+    font-family: 'Induction', sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    color: #555555;
+    text-transform: uppercase;
+}
+
+.founding-text {
+    font-size: 0.92rem;
+    line-height: 1.9;
+    color: #888888;
+}
+
+.founding-text p+p {
+    margin-top: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .history-hero {
+        padding: 8rem 2rem 4rem;
+    }
+
+    .history-hero-title {
+        font-size: 4rem;
+    }
+
+    .history-timeline-section {
+        padding: 5rem 2rem;
+    }
+
+    .history-founding-section {
+        padding: 4rem 2rem;
+    }
+
+    .history-founding-inner {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .history-hero-title {
+        font-size: 3rem;
+    }
+}

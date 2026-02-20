@@ -1,0 +1,333 @@
+.ai-page {
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+/* === HERO === */
+.ai-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 8rem 4rem 4rem;
+}
+
+
+
+.ai-hero-grid-lines {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(237, 106, 45, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(237, 106, 45, 0.04) 1px, transparent 1px);
+    background-size: 80px 80px;
+}
+
+.ai-hero-content {
+    position: relative;
+    z-index: 50;
+    max-width: 1800px;
+    width: 200%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7rem;
+    align-items: center;
+}
+
+.ai-hero-eyebrow {
+    font-family: 'Induction', sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #ed6a2d;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.ai-hero-eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 2rem;
+    height: 1px;
+    background: #ed6a2d;
+}
+
+.ai-hero-title {
+    font-family: 'Coolvetica', sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0 0 1.5rem;
+    letter-spacing: -0.02em;
+}
+
+.ai-hero-title span {
+    font-family: 'Induction', sans-serif;
+    color: #ed6a2d;
+}
+
+.ai-hero-desc {
+    font-family: 'Coolvetica', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ffffff;
+    margin-bottom: 2.5rem;
+}
+
+.ai-hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.9rem 2rem;
+    background: linear-gradient(135deg, rgba(237, 106, 45, 0.15), rgba(196, 106, 45, 0.1));
+    border: 1px solid rgba(237, 106, 45, 0.4);
+    border-radius: 6px;
+    color: #ffffff;
+    font-family: 'Induction', sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.ai-hero-cta:hover {
+    background: linear-gradient(135deg, rgba(237, 106, 45, 0.3), rgba(196, 106, 45, 0.2));
+    border-color: #ed6a2d;
+    transform: translateY(-2px);
+}
+
+/* === MODELS SECTION === */
+.ai-models-section {
+    padding: 6rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    margin-bottom: 3rem;
+}
+
+.section-eyebrow {
+    font-family: 'Induction', sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #ed6a2d;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.section-eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 2rem;
+    height: 1px;
+    background: #ed6a2d;
+}
+
+.section-title {
+    font-family: 'Coolvetica', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.section-title span {
+    font-family: 'Induction', sans-serif;
+    color: #ed6a2d;
+}
+
+/* Models grid */
+.ai-models-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.ai-model-card {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.8), rgba(17, 17, 17, 0.9));
+    border: 1px solid rgba(196, 106, 45, 0.15);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.ai-model-card:hover {
+    border-color: rgba(237, 106, 45, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.ai-model-number {
+    font-family: 'Induction', sans-serif;
+    font-size: 0.55rem;
+    letter-spacing: 0.2em;
+    color: #ed6a2d;
+    margin-bottom: 1rem;
+}
+
+.ai-model-name {
+    font-family: 'Induction', sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.ai-model-type {
+    font-size: 0.82rem;
+    color: #555555;
+    margin-bottom: 1.5rem;
+}
+
+.ai-model-desc {
+    font-size: 0.88rem;
+    line-height: 1.7;
+    color: #888888;
+    margin-bottom: 1.5rem;
+}
+
+.ai-model-stats {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.ai-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.ai-stat-value {
+    font-family: 'Induction', sans-serif;
+    font-size: 1rem;
+    color: #ed6a2d;
+}
+
+.ai-stat-label {
+    font-size: 0.72rem;
+    color: #555555;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+/* === CAPABILITIES === */
+.ai-capabilities-section {
+    padding: 6rem 4rem;
+    background: linear-gradient(90deg, #000000 0%, #270900 600%);
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.ai-capabilities-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ai-capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.ai-capability-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.ai-capability-item:hover {
+    border-color: rgba(237, 106, 45, 0.2);
+}
+
+.ai-capability-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(237, 106, 45, 0.3);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ed6a2d;
+}
+
+.ai-capability-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.ai-capability-title {
+    font-family: 'Induction', sans-serif;
+    font-size: 0.8rem;
+    color: #ffffff;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.05em;
+}
+
+.ai-capability-desc {
+    font-size: 0.83rem;
+    line-height: 1.6;
+    color: #666666;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .ai-hero-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .ai-hero-eyebrow {
+        justify-content: center;
+    }
+
+    .ai-hero-title {
+        font-size: 3.5rem;
+    }
+
+    .ai-models-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ai-capabilities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ai-models-section,
+    .ai-capabilities-section {
+        padding: 4rem 2rem;
+    }
+
+    .ai-hero {
+        padding: 8rem 2rem 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ai-hero-title {
+        font-size: 2.8rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+}
