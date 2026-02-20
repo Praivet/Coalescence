@@ -73,7 +73,7 @@ Full-screen hero section with the company vision, a three-pillar philosophy grid
 | Component | Description | Link |
 |-----------|-------------|------|
 | **React Router DOM v6** | Client-side routing between all pages | [npmjs.com/package/react-router-dom](https://www.npmjs.com/package/react-router-dom) |
-| **BackgroundBeams** | Animated beam background for the hero section | [ui.aceternity.com/components/background-beams](https://ui.aceternity.com/components/background-beams) |
+| **BackgroundBeams** | Animated beam background for the hero section | [ui.aceternity.com/components/background-beams](https://www.shadcn.io/background/beams) |
 | **ScrollVelocity** | Horizontally scrolling velocity text strip | [motion.dev](https://motion.dev) |
 | **RotatingText** | Animated word cycling in the hero headline | Custom component using [Framer Motion](https://www.framer.com/motion/) |
 | **Carousel / SpotlightCard** | Interactive spotlight-effect card carousel | [ui.aceternity.com](https://ui.aceternity.com) |
