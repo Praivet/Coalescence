@@ -17,6 +17,7 @@ function Header() {
                         <li><Link to="/ai">AI</Link></li>
                         <li><Link to="/research">RESEARCH</Link></li>
                         <li><Link to="/history">HISTORY</Link></li>
+                        <li><Link to="/forum">NEWS</Link></li>
                         <li><Link to="/tomorrow" className="nav-tomorrow">THE TOMORROW</Link></li>
                     </ul>
                 </nav>
